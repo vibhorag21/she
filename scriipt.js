@@ -51,7 +51,7 @@ class Paper {
             this.prevX = e.clientX;
             this.prevY = e.clientY;
 
-            paper.style.transform = translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) rotateZ(${this.rotation}deg);
+            paper.style.transform = `translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) rotateZ(${this.rotation}deg)`;
         };
 
         const onUp = (e) => {
@@ -107,3 +107,4 @@ papers.forEach(el => {
     const p = new Paper();
     p.init(el);
 });
+
